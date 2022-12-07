@@ -4,6 +4,7 @@ pipeline{
         stage('Make Directory'){
             steps {
                 sh "mkdir ~/pipeline-tutorial-test"
+                sh "pwd && ls -la"
             }
         }
         stage('Make Files'){
